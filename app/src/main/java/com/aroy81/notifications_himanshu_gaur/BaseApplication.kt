@@ -10,7 +10,7 @@ const val DEFAULT_NAME = "DEFAULT_NAME"
 class BaseApplication : Application() {
     override fun onCreate() {
         super.onCreate()
-        val channel = NotificationChannel(DEFAULT_ID,DEFAULT_NAME, NotificationManager.IMPORTANCE_HIGH)
+        val channel = NotificationChannel(DEFAULT_ID,DEFAULT_NAME, NotificationManager.IMPORTANCE_DEFAULT)
         val notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
         notificationManager.createNotificationChannel(channel)
     }
