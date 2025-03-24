@@ -45,7 +45,7 @@ class MainActivity : ComponentActivity() {
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
                         val context = LocalContext.current
-                        Button(onClick = { simpleNotification(context) }) {
+                        Button(onClick = { silentNotification(context) }) {
                             Text("click here")
                         }
                     }

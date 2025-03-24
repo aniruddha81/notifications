@@ -8,8 +8,8 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.content.ContextCompat
 
-fun simpleNotification(context: Context) {
-    val notification = NotificationCompat.Builder(context, DEFAULT_ID)
+fun silentNotification(context: Context) {
+    val notification = NotificationCompat.Builder(context, SILENT_ID)
         .setSmallIcon(R.drawable.ic_launcher_background).setContentTitle("hudai")
         .setContentText("shauwaaaaaaaaaaaa").build()
 
